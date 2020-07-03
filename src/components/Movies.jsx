@@ -53,11 +53,11 @@ class Movies extends Component {
             this.state.movies.map(movie => {
                 return (
                     <tr>
-                        <td scope="row">{movie.title}</td>
-                        <td scope="row">{movie.genre.name}</td>
-                        <td scope="row">{movie.numberInStock}</td>
-                        <td scope="row">{movie.dailyRentalRate}</td>
-                        <td scope="row">
+                        <th scope="row">{movie.title}</th>
+                        <td>{movie.genre.name}</td>
+                        <td>{movie.numberInStock}</td>
+                        <td>{movie.dailyRentalRate}</td>
+                        <td>
                             <button className="btn btn-danger btn-sm" onClick={() => this.handleDelete(movie._id)}>
                                 Delete
                             </button>
